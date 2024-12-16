@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - LAS BONITAS STORE</title>
+    <link rel="stylesheet" href="/style/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html" class="logo">LAS BONITAS STORE</a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a href="/about.html">Acerca de</a></li>
+        <li class="nav-item"><a href="/shop.html">Tienda</a></li>
+        <li class="nav-item"><a href="/contact.html">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="cart-icon">
+          <span class="cart-count">0</span>
+          🛒
+        </div>
+        <div class="user-profile">
+          <img
+            src="/img/Alejandro Foto 4x4.jpeg"
+            alt="G. Alejandro Riveiro"
+            class="user-avatar"
+          />
+          <span>G. Alejandro Riveiro</span>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="contact-content">
+        <h1>Contacto</h1>
+        <form class="contact-form">
+          <input type="text" id="name" placeholder="Nombre" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea id="message" placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7695197673315!2d-58.42984059999999!3d-34.585084099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58daa38d0d3%3A0x25dde7d88b9f969d!2sMalabia%201771%2C%20C1414DMM%20CABA!5e0!3m2!1sen!2sar!4v1684447437375!5m2!1sen!2sar"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Carrito de Compras</h2>
+        <button class="close-cart">&times;</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          Total: $<span id="cart-total-amount">0</span>
+        </div>
+        <button id="checkout-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+          Pagar con Mercado Pago
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 LAS BONITAS STORE. Todos los derechos reservados.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-facebook"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-instagram"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
